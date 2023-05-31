@@ -6,7 +6,7 @@ pipeline {
   */
     parameters {
         string(name: 'TAG', defaultValue: 'master', description: 'Tag / Branch name to be used for deployment', trim: true)
-        string(name: 'STAGE', defaultValue: 'dev', description: 'Enter the version', trim: true)
+        string(name: 'STAGE', defaultValue: 'dev', description: 'Enter the STAGE (dev/qa/staging/prod)', trim: true)
     }
     /* 
     triggers {
