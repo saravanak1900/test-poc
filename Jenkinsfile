@@ -8,11 +8,11 @@ pipeline {
         string(name: 'TAG', defaultValue: 'master', description: 'Tag / Branch name to be used for deployment')
         string(name: 'STAGE', defaultValue: 'dev', description: 'Enter the version')
     }
-     
+    /* 
     triggers {
         pollSCM('H/2 * * * *') // Poll SCM every minute
     }
-     
+    */
         stages {
         stage('Build') {
             steps {
